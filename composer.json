@@ -45,7 +45,7 @@
     "require": {
         "php": ">5.6",
         "yiisoft/yii2": "*",
-        "bower-asset/select2": "^4.0"
+        "bower-asset/select2": "^4.0.3"
     },
     "require-dev": {
         "hiqdev/hidev-php": "<2.0 || dev-master",
@@ -55,5 +55,11 @@
         "psr-4": {
             "hiqdev\\yii2\\assets\\select2\\": "src"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
