@@ -1,4 +1,12 @@
 <?php
+/**
+ * Yii2 asset for Select2 plugin
+ *
+ * @link      https://github.com/hiqdev/yii2-asset-select2
+ * @package   yii2-asset-select2
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2017, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\yii2\assets\select2;
 
@@ -31,7 +39,7 @@ class Select2Asset extends AssetBundle
      * {@inheritdoc}
      */
     public $depends = [
-        JqueryAsset::class
+        JqueryAsset::class,
     ];
 
     /**
