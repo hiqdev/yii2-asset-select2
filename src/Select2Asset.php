@@ -19,7 +19,7 @@ class Select2Asset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@bower/select2/dist';
+    public $sourcePath = '@vendor/bower-asset/select2/dist';
 
     /**
      * {@inheritdoc}
