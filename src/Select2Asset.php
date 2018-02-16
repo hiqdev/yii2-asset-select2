@@ -25,14 +25,14 @@ class Select2Asset extends AssetBundle
      * {@inheritdoc}
      */
     public $js = [
-        YII_DEBUG ? 'js/select2.full.js' : 'js/select2.full.min.js',
+        'js/select2.full.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $css = [
-        YII_DEBUG ? 'css/select2.css' : 'css/select2.min.css',
+        'css/select2.min.css',
     ];
 
     /**
