@@ -7,18 +7,18 @@ $.fn.select2.amd.define('select2/custom/dropdown-adapter/select-all', [
     }
 
     SelectAll.prototype.render = function (decorated) {
-        const $rendered = decorated.call(this);
-        const self = this;
+        var $rendered = decorated.call(this);
+        var self = this;
 
-        const $selectAll = $(
+        var $selectAll = $(
             '<button type="button" class="btn btn-xs" style="margin: .7rem .3rem;">Select All</button>'
         );
 
         $rendered.find('.select2-dropdown').prepend($selectAll);
 
-        $selectAll.on('click', () => {
-            const $results = $rendered.find('.select2-results__option[aria-selected=false]');
-            $results.each((i, elem) => {
+        $selectAll.on('click', function() {
+            var $results = $rendered.find('.select2-results__option[aria-selected=false]');
+            $results.each(function (i, elem) {
                 $(elem).trigger('mouseup');
             });
 
