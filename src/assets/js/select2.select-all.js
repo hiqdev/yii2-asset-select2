@@ -17,7 +17,7 @@ $.fn.select2.amd.define('select2/custom/dropdown-adapter/select-all', [
         $rendered.find('.select2-dropdown').prepend($selectAll);
 
         $selectAll.on('click', function() {
-            var $results = $rendered.find('.select2-results__option[aria-selected=false]');
+            var $results = $rendered.find('.select2-results__option--selectable:not(.select2-results__option--selected)');
             $results.each(function (i, elem) {
                 $(elem).trigger('mouseup');
             });
